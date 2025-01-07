@@ -1,0 +1,175 @@
+html {
+    background-color: #fff9f5;
+    font-size: 20px;
+    font-family: Georgia, "Bitstream Charter", "Times New Roman", serif;
+}
+
+body {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1000px;
+    font-family: 'Times New Roman';
+    line-height: 1.6;
+}
+
+p {
+    color: black;
+}
+
+title {
+    text-align: center;
+    
+}
+
+a:link {
+    color: black;
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Distributes space between elements */
+    align-items: center;
+    min-height: 8vh;
+}
+
+.headingRight a {
+    overflow: hidden;
+    /* background-color: lightblue; */
+    padding: 20px 10px;
+  }
+
+    /* .headingRight a:hover {
+        background-color: lightgreen;
+    } */
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #000;
+    margin: 10px 0;
+  }
+
+  .BigName {
+    overflow: hidden;
+    font-size: 30px;
+    margin-left: 0; /* Ensures no margin */
+    text-align: left; /* Aligns the text inside to the left */
+    color: #235757
+}
+
+*{
+    margin: 0;
+}
+
+#slide{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 1600px;
+    margin: auto;
+}
+
+.subcontainer{
+    width: 85%;
+    margin: auto;
+}
+
+.slide-img{
+    width: 100%;
+    height: 275px; /* height of pixel */
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.slide-img:hover{
+    box-shadow: 0 0 0 200px rgb(43, 39, 39) inset;
+}
+
+.slide-img a{
+    opacity: 0;
+    text-decoration: none;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.slide-img:hover a{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.img-1 {
+    background-image: url('IMG_2827.png');
+}
+.img-2{
+    background-image: url('IMG_3002.png');
+}
+.img-3{
+    background-image: url('IMG_3292.png');
+}
+.img-4{
+    background-image: url('IMG_3293.png');
+}
+.img-5{
+    background-image: url('IMG_2828.png');
+}
+
+
+@media(max-width: 1600px){
+    .container{
+        width: 100%;
+    }
+}
+
+/* Center the content div */
+#content {
+    margin: 0 auto; /* Center horizontally */
+    text-align: left; /* Center text inside the div */
+    width: 80%; /* Adjust the width as needed */;
+}
+
+/* Optional styling for the title */
+#content .title {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+#content .intro {
+    margin-top: 15px;
+    font-size: 20;
+}
+
+.right-figure {
+    float: right;
+    margin-left: 100px;
+    margin-bottom: 15px;
+    max-width: 350px;
+}
+
+.right-figure img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.right-figure figcaption {
+    text-align: center;
+    font-size: 1rem;
+    color: #000;
+    margin-top: 8px;
+}
