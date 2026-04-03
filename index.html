@@ -3,50 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
-    
-    <link src = "https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="style.css">
-    
-    <title> Joseph Lee | Home  </title>
+    <title>Joseph Lee</title>
 </head>
+<body data-page="home">
+    <header class="site-header">
+        <a class="site-title" href="index.html">Joseph Lee</a>
+        <nav class="site-nav" aria-label="Primary">
+            <a href="index.html" data-nav="home">Home</a>
+            <a href="about.html" data-nav="about">About</a>
+            <a href="projects.html" data-nav="projects">Projects</a>
+            <a href="contact.html" data-nav="contact">Contact</a>
+            <a href="https://github.com/jlee31" rel="noopener noreferrer">GitHub</a>
+        </nav>
+    </header>
 
-<body>
-    <script src="script.js"></script>
-    <nav>
-        <div class="BigName">
-            <h2>Joseph Lee</h2>
-        </div>
-        <div class="headingRight">
-            <a class="active" href="index.html">Home</a>
+    <main class="page-main">
+        <figure class="hero-photo">
+            <img src="IMG_2217.png" alt="Joseph Lee">
+            <figcaption>Left: me.</figcaption>
+        </figure>
+
+        <h1 class="page-heading">Hi, I’m Joseph</h1>
+        <p class="lede">
+            I’m a Computer Science student at the University of Waterloo. I like building small games and tools, and I’m always interested in a thoughtful project or conversation.
+        </p>
+        <p>
+            <a href="projects.html">See projects</a>
+            ·
             <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
+            ·
             <a href="contact.html">Contact</a>
-            <a href="https://github.com/jlee31">Github</a>
-        </div>    
-    </nav>
-    <hr>
-
-    <main>
-        <br>
-        <div id="content"> 
-                <figure class="right-figure">
-                    <img class="right" src="IMG_2217.png" alt="Joseph Lee">
-                    <figcaption> I am the one on the left. :-) </figcaption>
-                </figure>
-            
-            <h3 class="title">Joseph Lee</h3>
-            <br>
-            <p> I am a First Year student studying at the University of Waterloo, learn more about me in the <a href="about.html">about</a> page. </p> <br>
-            <p> Apart from academics, I try to stay active both physically and mentally. Feel free to check out my Projects.</p> <br>
-            <p> As someone who is always determined to create the best version of me, I consistently challenge myself to work hard, push my limits, and never give up.</p> <br>
-            <p> I am currently open to network. Please reach out!</p>
-        </div>
-        
-        
-
+        </p>
     </main>
-    
+
+    <script src="js/site.js"></script>
 </body>
 </html>
