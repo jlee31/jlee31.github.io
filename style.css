@@ -68,13 +68,6 @@ a:hover {
     padding: 1.5rem 1.25rem 3rem;
 }
 
-/* Contain floated hero image on home */
-.page-main::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 .page-heading {
     font-size: 1.75rem;
     font-weight: 600;
@@ -86,26 +79,6 @@ a:hover {
     font-size: 1.05rem;
     max-width: 40rem;
     margin-bottom: 1.25rem;
-}
-
-.hero-photo {
-    float: right;
-    max-width: min(280px, 42vw);
-    margin: 0 0 1rem 1.5rem;
-}
-
-.hero-photo img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 4px;
-}
-
-.hero-photo figcaption {
-    font-size: 0.85rem;
-    color: #444;
-    margin-top: 0.35rem;
-    text-align: center;
 }
 
 .prose-block {
@@ -188,12 +161,4 @@ a:hover {
     font-family: system-ui, -apple-system, sans-serif;
     font-size: 0.9rem;
     margin: 0;
-}
-
-@media (max-width: 600px) {
-    .hero-photo {
-        float: none;
-        max-width: 220px;
-        margin: 0 auto 1.25rem;
-    }
 }
