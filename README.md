@@ -1,5 +1,3 @@
-# !!! Old Portfolio Website NO LONGER IN USE
+# Personal Website
 
-### Personal Website
-
-Hi, this is my personal website. 
+Hi, this is my personal website.
