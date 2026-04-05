@@ -11,6 +11,12 @@ body {
     color: #1a1a1a;
 }
 
+main {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
+}
+
 a:link,
 a:visited {
     color: #1e4d4d;
@@ -20,172 +26,111 @@ a:hover {
     text-decoration: underline;
 }
 
-.site-header {
+.intro {
     display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 0.75rem 1.5rem;
-    padding: 1rem 1.25rem;
-    border-bottom: 1px solid #ccc;
-    max-width: 52rem;
-    margin: 0 auto;
+    align-items: center;
+    gap: 1.25rem;
 }
 
-.site-title {
-    font-size: 1.35rem;
+.avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #e5ded2;
+    border: 1px solid #ccc;
+    flex-shrink: 0;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro h1 {
+    font-size: 1.8rem;
     font-weight: 700;
     color: #235757;
-    text-decoration: none;
+    margin: 0 0 0.4rem;
 }
 
-.site-title:hover {
-    text-decoration: none;
-}
-
-.site-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.35rem 1rem;
+.links {
     font-family: system-ui, -apple-system, sans-serif;
     font-size: 0.95rem;
-}
-
-.site-nav a {
-    text-decoration: none;
-    color: #1e4d4d;
-}
-
-.site-nav a.nav-active {
-    font-weight: 600;
-    text-decoration: underline;
-    text-underline-offset: 0.2em;
-}
-
-.page-main {
-    max-width: 52rem;
-    margin: 0 auto;
-    padding: 1.5rem 1.25rem 3rem;
-}
-
-.page-heading {
-    font-size: 1.75rem;
-    font-weight: 600;
-    color: #235757;
-    margin: 0 0 1rem;
-}
-
-.lede {
-    font-size: 1.05rem;
-    max-width: 40rem;
-    margin-bottom: 1.25rem;
-}
-
-.prose-block {
-    margin-bottom: 2rem;
-}
-
-.prose-block h2 {
-    font-size: 1.15rem;
-    font-weight: 600;
-    color: #235757;
-    margin: 0 0 0.5rem;
-}
-
-.tight-list {
-    margin: 0.5rem 0 0;
-    padding-left: 1.25rem;
-}
-
-.tight-list li {
-    margin-bottom: 0.35rem;
-}
-
-.muted {
-    color: #555;
-    font-size: 0.95rem;
-    margin-top: 0.75rem;
-}
-
-.experience-intro {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
-.experience-list {
-    margin-top: 0.25rem;
-}
-
-.experience-item {
-    margin-bottom: 1.5rem;
-}
-
-.experience-item:last-of-type {
-    margin-bottom: 0;
-}
-
-.experience-head {
-    margin: 0 0 0.15rem;
-    font-size: 1rem;
-}
-
-.experience-dates {
-    margin: 0 0 0.65rem;
-    font-size: 0.95rem;
-}
-
-.contact-list {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0 0;
-}
-
-.contact-list li {
-    margin-bottom: 0.5rem;
-}
-
-.projects-section {
-    margin-top: 2.25rem;
-}
-
-.projects-section-title {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #235757;
-    margin: 0 0 1rem;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 0.35rem;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
-.project-card {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 1rem 1.1rem;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+.links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    text-decoration: none;
 }
 
-.project-card-title {
-    font-size: 1.05rem;
-    font-weight: 600;
-    margin: 0 0 0.5rem;
-    color: #1a1a1a;
+.links a:hover {
+    text-decoration: underline;
 }
 
-.project-card-summary {
+.links svg {
+    width: 1.05em;
+    height: 1.05em;
+    fill: currentColor;
+}
+
+.exp-item {
+    margin-bottom: 1.25rem;
+}
+
+.exp-head {
+    margin: 0 0 0.15rem;
+}
+
+.exp-dates {
+    margin: 0 0 0.4rem;
+    color: #555;
     font-size: 0.95rem;
-    margin: 0 0 0.75rem;
-    color: #333;
 }
 
-.project-card-links {
+.exp-item ul {
+    margin-top: 0.25rem;
+}
+
+.tagline {
+    margin: 0 0 0.5rem;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+.proj-stack {
     font-family: system-ui, -apple-system, sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 2rem 0;
+}
+
+section h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #235757;
+    margin: 0 0 0.75rem;
+}
+
+section p {
+    margin: 0 0 0.9rem;
+}
+
+section ul {
     margin: 0;
+    padding-left: 1.25rem;
+}
+
+section ul li {
+    margin-bottom: 0.6rem;
 }
