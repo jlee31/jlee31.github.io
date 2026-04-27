@@ -109,6 +109,25 @@ a:hover {
     color: #666;
 }
 
+.proj-item {
+    margin-bottom: 1.1rem;
+}
+
+.proj-head {
+    margin: 0 0 0.2rem;
+}
+
+.proj-status {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 0.8rem;
+    color: #888;
+    font-style: italic;
+}
+
+.proj-item p {
+    margin: 0 0 0.3rem;
+}
+
 hr {
     border: none;
     border-top: 1px solid #ccc;
