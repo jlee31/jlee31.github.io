@@ -9,11 +9,16 @@
 </head>
 <body>
     <main>
+        <nav class="site-nav" aria-label="Primary">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="papers.html">Papers</a>
+        </nav>
         <header class="intro">
             <img class="avatar" src="Documents/image.png" alt="">
             <div class="intro-text">
                 <h1>Joseph Lee</h1>
-                <p class="tagline">Computer Science student at the University of Waterloo.</p>
+                <p class="tagline">Computer Science student at the University of Waterloo. Currently a software developer at the Acceleration Consortium, University of Toronto.</p>
                 <p class="links">
                     <a href="mailto:hijosephl31@gmail.com" aria-label="Email">
                         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1 2.4V18h16V7.4l-8 5.2-8-5.2zM4.6 7l7.4 4.8L19.4 7H4.6z"/></svg>
@@ -40,10 +45,10 @@
         <section id="bio">
             <h2>Bio</h2>
             <p>
-                I'm a Computer Science student at the University of Waterloo. I want to build honest software that helps people, and I'm drawn to full-stack development, automation, and systems with real users. Lately I've been most curious about computer vision and AI/ML, and I hope to pursue research down the line.
+                I'm a Computer Science student at the University of Waterloo. I want to build honest software that helps people, and I'm drawn to full-stack development, automation, and systems with real users. At the Acceleration Consortium I build tools that help scientists run fewer physical experiments using machine learning. I hope to pursue research down the line.
             </p>
             <p>
-                Outside academics I stay active through climbing, volleyball, reading, and cooking. Learn more about me below.
+                Outside academics I stay active through climbing, volleyball, reading, and cooking.
             </p>
         </section>
 
@@ -52,29 +57,37 @@
         <section id="experience">
             <h2>Work Experience</h2>
             <div class="exp-item">
-                <p class="exp-head"><strong>Software QA Analyst</strong> — <em>Environment and Climate Change Canada</em></p>
-                <p class="exp-dates">Sept. 2025 – Dec. 2025 · North York, Canada</p>
+                <p class="exp-head"><strong>Software Developer (Full-Stack and Machine Learning)</strong> — <em>Acceleration Consortium, University of Toronto</em></p>
+                <p class="exp-dates">Sep. 2026 – Apr. 2027 · Toronto, Canada</p>
                 <ul>
-                    <li>Designed and maintained end-to-end (E2E) regression suites in Python, Robot Framework, TypeScript, and Playwright, cutting manual test cycles by 60% and surfacing 20+ defects ahead of release.</li>
-                    <li>Owned cross-environment functional, integration, and usability test plans, validating new features and defect fixes through UAT sign-off.</li>
-                    <li>Drove defect triage in Azure DevOps by sharpening reproduction steps and consolidating duplicates, lowering duplicate report rate by 40%.</li>
+                    <li>Built a Next.js and FastAPI dashboard that lets lab scientists predict formulation results and test different inputs without running physical experiments.</li>
+                    <li>Built batch prediction pipelines to replace one-at-a-time runs, reducing prediction costs by ~95%.</li>
+                    <li>Applied Bayesian optimization to select promising experiments from prior results, reaching target outcomes with 80% fewer experiments than brute-force testing.</li>
+                    <li>Designed scalable Python REST APIs for spreadsheet data ingestion and validation, and automated AWS deployments with Terraform and GitHub Actions.</li>
+                </ul>
+            </div>
+            <div class="exp-item">
+                <p class="exp-head"><strong>Software QA Analyst</strong> — <em>Environment and Climate Change Canada</em></p>
+                <p class="exp-dates">Sept. 2025 – Dec. 2025 · Toronto, Canada</p>
+                <ul>
+                    <li>Engineered automation frameworks in Python, Robot Framework, Playwright, and RPA Framework across 100+ national applications, cutting manual test cycles by 60% and surfacing 20+ defects pre-release.</li>
+                    <li>Built Azure SQL validation pipelines to verify backend data, REST APIs, and large datasets feeding analytics and ML workflows.</li>
+                    <li>Shipped Azure DevOps dashboards tracking defects, performance, and regression coverage, lowering the duplicate report rate by 40%.</li>
                 </ul>
             </div>
             <div class="exp-item">
                 <p class="exp-head"><strong>IT Technician and Support Analyst</strong> — <em>Environment and Climate Change Canada</em></p>
-                <p class="exp-dates">May 2025 – Dec. 2025 · North York, Canada</p>
+                <p class="exp-dates">May 2025 – Dec. 2025 · Toronto, Canada</p>
                 <ul>
-                    <li>Delivered Tier 1 and Tier 2 support for 200+ end users, cutting average resolution time by 50% by writing reusable diagnostic playbooks.</li>
-                    <li>Built PowerShell and Python automations for account provisioning and software deployment, reducing onboarding effort by 35%.</li>
-                    <li>Deployed and hardened Windows workstations at scale with Microsoft Autopilot, Intune, and Entra ID, standardizing setup across the team.</li>
+                    <li>Delivered Tier 1/2 support for 200+ end users, cutting average resolution time by 50% through reusable diagnostic playbooks.</li>
+                    <li>Engineered Python, PowerShell, Power Automate, and SAP GUI automations that shortened repetitive admin tasks by 80%.</li>
                 </ul>
             </div>
             <div class="exp-item">
                 <p class="exp-head"><strong>ServiceNow Software Developer</strong> — <em>ServiceNow Developer Program</em></p>
                 <p class="exp-dates">Jan. 2025 – Aug. 2025 · North York, Canada</p>
                 <ul>
-                    <li>Shipped Client Scripts and UI Policies that automated multi-step approval workflows, removing repetitive manual steps for end users and tightening process consistency.</li>
-                    <li>Used the GlideForm and GlideUser APIs to add dynamic validation and role-based UI behavior, improving data quality at intake.</li>
+                    <li>Shipped Client Scripts and UI Policies that automated multi-step approval workflows, using the GlideForm and GlideUser APIs for dynamic validation and role-based UI behavior.</li>
                 </ul>
             </div>
         </section>
@@ -82,65 +95,28 @@
         <hr>
 
         <section id="projects">
-            <h2>Projects</h2>
+            <h2>Highlighted Projects</h2>
             <div class="proj-item">
-                <p class="proj-head"><strong>H[AI]r</strong> <span class="proj-stack">Swift, SwiftUI, iOS</span> <span class="proj-status">in progress · private</span> </p>
-                <p>A native iPhone app I'm currently building in SwiftUI. Focused on a clean, responsive user experience; more details coming as the project matures.</p>
+                <p class="proj-head"><strong>Quote Finder</strong> <span class="proj-stack">Python, LangChain, FastAPI, Claude API, React</span></p>
+                <p>A full-stack RAG app that retrieves relevant quotes from natural-language prompts. 25,000+ quotes are embedded into a vector store and retrieved by cosine similarity through a LangChain and Claude pipeline; tuning chunking and top-k cut query latency by 50%. <a href="https://github.com/jlee31" target="_blank" rel="noopener noreferrer">GitHub</a></p>
             </div>
             <div class="proj-item">
-                <p class="proj-head"><strong>Chess Engine</strong> <span class="proj-stack">C++</span></p>
-                <p>Built an object-oriented chess engine in C++ as my CS246 final project, implementing full rule enforcement — castling, en passant, promotion, and check/checkmate detection — alongside a tunable AI opponent powered by minimax with alpha-beta pruning. <a href="https://github.com/jlee31/cs246_a5" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+                <p class="proj-head"><strong>Image Lab</strong> <span class="proj-stack">Python, FastAPI, PyTorch, OpenCV, Docker</span></p>
+                <p>An image processing platform with a FastAPI backend, web frontend, and desktop GUI sharing one processing core. It has 13+ filters, U2-Net background removal, and ResNet auto-tagging, and ships in Docker with CI/CD. <a href="https://github.com/jlee31" target="_blank" rel="noopener noreferrer">GitHub</a></p>
             </div>
             <div class="proj-item">
-                <p class="proj-head"><strong>Quote Finder</strong> <span class="proj-stack">Python, Flask, React, TensorFlow</span></p>
-                <p>Full-stack app that surfaces relevant quotes and verses from natural-language prompts using sentence-transformer embeddings and cosine similarity, served through a Flask REST API and consumed by a React front-end. Reached 85% relevance accuracy on a held-out evaluation set. <a href="https://github.com/jlee31" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+                <p class="proj-head"><strong>Study Room</strong> <span class="proj-stack">Python, FastAPI, WebSockets, SQLite</span></p>
+                <p>A real-time co-working app: share a room link and get a synced Pomodoro timer, live presence, and a sticky-note corkboard, with no accounts. The timer stays in sync by broadcasting only the end time and letting each browser correct for clock skew. <a href="https://github.com/jlee31/studyroom" target="_blank" rel="noopener noreferrer">GitHub</a></p>
             </div>
-            <div class="proj-item">
-                <p class="proj-head"><strong>Image Lab</strong> <span class="proj-stack">Python, Tkinter, Flask, OpenCV, Docker</span></p>
-                <p>Desktop image-processing app exposing 10+ OpenCV transformations through a Tkinter GUI, backed by a containerized Flask REST API and verified with Postman. Profiled and rewrote the processing pipeline to bring end-to-end runtime from 2.5s down to under 1s, and integrated Real-ESRGAN to clean up low-quality uploads. <a href="https://github.com/jlee31" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-            </div>
-            <div class="proj-item">
-                <p class="proj-head"><strong>Magestic Brawl</strong> <span class="proj-stack">Python, Pygame-CE Gymnasium </span> <span class="proj-status">currently adding new features and reinforcement learning </span> </p>
-                <p>A 2-d streetfighter game that uses magestic characters. Written in Python and I try to improve it whenever I have the time.  <a href="https://github.com/jlee31/magestic-brawl" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-            </div>
-            <div class="proj-item">
-                <p class="proj-head"><strong>ML Notes</strong> <span class="proj-stack">Markdown, Python (Pandas, Tensorflow, Numpy, PyTorch) </span></p>
-                <p>An evolving ML/AI learning sandbox with study notes, notebook experiments, and chapter-by-chapter work from hands-on machine learning resources. <a href="https://github.com/jlee31/ml-ai-sandbox" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-            </div>
-            <div class="proj-item">
-                <p class="proj-head"><strong>Notes</strong> <span class="proj-stack">Markdown</span></p>
-                <p>An open, growing collection of notes spanning coursework, papers, tools, and ideas I want to keep close at hand. Public so others can read along or borrow from it. <a href="https://github.com/jlee31/notes" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-            </div>
-            <div class="proj-item">
-                <p class="proj-head"><strong>ECCC Scripts</strong> <span class="proj-stack">Python</span></p>
-                <p>During my co-op at Environment and Climate Change Canada, I made a few scripts to help boost my productivity at work. I changed the scripts to be generic since I can't display any data that I used while working.  <a href="https://github.com/jlee31/eccc-scripts" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-            </div>
-            <div class="proj-item">
-                <p class="proj-head"><strong>Self-Driving Race Car</strong> <span class="proj-stack">Python · PyTorch · Gymnasium</span></p>
-                <p>Rebuilding a deep reinforcement learning agent that learns to drive a race car from raw pixels. The agent uses DQN to navigate a procedurally generated track in the CarRacing-v3 environment, with the goal of scoring 900+ averaged over 100 races. A rewrite of an existing TF1 implementation, now in modern PyTorch. <a href="https://github.com/jlee31/AI-self-driving-race-car-Deep-Reinforcement-Learning" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-            </div>
-            <div class="proj-item">
-                <p class="proj-head"><strong>Neural Ronin</strong> <span class="proj-stack">Python · Pygame · Gymnasium · Stable-Baselines3</span> <span class="proj-status">in progress</span> </p>
-                <p>A 2D samurai platformer built as a reinforcement learning training environment. The game is built from scratch using the pygpen engine, featuring sprite animations, physics, tilemap-based levels, and combat. A Gymnasium wrapper exposes the game as an RL environment, with a PPO agent trained via Stable-Baselines3 to learn to fight through levels from game state observations. <a href="https://github.com/jlee31/neural-ronin" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-            </div>
-            <div class="proj-item">
-                <p class="proj-head"><strong>Study Room</strong> <span class="proj-stack">Python · FastAPI · WebSockets · SQLite · Vanilla JS</span> <span class="proj-status">in progress</span> </p>
-                <p>A real-time co-working web app where people create a room, share the link, and get a synced Pomodoro timer, live presence, a sticky-note corkboard, and Spotify "now playing" cards — no accounts, the unguessable room id in the URL is the only key. Built on FastAPI with WebSocket broadcasts for per-room state, the timer stays in sync without per-second server ticks by broadcasting only the end time and letting each browser correct for clock skew locally. Persistent data lives in SQLite while ephemeral presence stays in process memory. Deployed on Fly.io. <a href="https://github.com/jlee31/studyroom" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-            </div>
-
-
+            <p class="more"><a href="projects.html">See all projects →</a></p>
         </section>
 
         <hr>
 
-        <section id="reading">
-            <h2>Reading</h2>
-            <p>Papers and writing I've been working through. Nothing published of my own yet — I'm reading to follow what interests me and to get better at engaging with research.</p>
-            <p><a href="https://drive.google.com/drive/folders/1ltNHLzrS7w6oiqyPjNfTh9RpKWwAtPEO?usp=sharing">Link</a> You can view my annotations to these papers via this link.</p>
-            <ul>
-                <li><a href="https://arxiv.org/pdf/2107.10833" target="_blank" rel="noopener noreferrer">Real-ESRGAN: Training Real-World Blind Super-Resolution with Pure Synthetic Data</a> — A practical super-resolution model trained on synthetic data to upscale real-world low-quality images. I used it in Image Lab to help clean up uploaded images.</li>
-                <li><a href="https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf" target="_blank" rel="noopener noreferrer">How to Read a Paper</a> — A short guide on the three-pass method. I wanted to read papers more effectively as a student and (hopefully) future researcher.</li>
-            </ul>
+        <section id="papers">
+            <h2>Papers</h2>
+            <p>Papers I've written or been working through, with notes and annotations.</p>
+            <p class="more"><a href="papers.html">See papers →</a></p>
         </section>
 
         <hr>

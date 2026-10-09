@@ -6,26 +6,76 @@
     <link rel="stylesheet" href="style.css">
     <title>Joseph Lee · Projects</title>
 </head>
-<body data-page="projects">
-    <header class="site-header">
-        <a class="site-title" href="index.html">Joseph Lee</a>
+<body>
+    <main>
         <nav class="site-nav" aria-label="Primary">
-            <a href="index.html" data-nav="home">Home</a>
-            <a href="about.html" data-nav="about">About</a>
-            <a href="projects.html" data-nav="projects">Projects</a>
-            <a href="contact.html" data-nav="contact">Contact</a>
-            <a href="https://github.com/jlee31" rel="noopener noreferrer">GitHub</a>
+            <a href="index.html">Home</a>
+            <a href="projects.html" aria-current="page">Projects</a>
+            <a href="papers.html">Papers</a>
         </nav>
-    </header>
+        <h1 class="page-title">Projects</h1>
+        <p class="lede">Things I've built, grouped by what they are.</p>
 
-    <main class="page-main">
-        <h1 class="page-heading">Projects</h1>
-        <p class="lede">Selected coursework and independent projects.</p>
-        <div id="projects-root"></div>
+        <h2 class="proj-group">Machine learning & AI</h2>
+        <div class="proj-item">
+            <p class="proj-head"><strong>Quote Finder</strong> <span class="proj-stack">Python, LangChain, FastAPI, Claude API, React</span></p>
+            <p>Full-stack RAG app that retrieves relevant quotes from natural-language prompts using vector embeddings over 25,000+ quotes. <a href="https://github.com/jlee31/" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        </div>
+        <div class="proj-item">
+            <p class="proj-head"><strong>Image Lab</strong> <span class="proj-stack">Python, FastAPI, PyTorch, OpenCV, Docker</span></p>
+            <p>Image processing platform with 13+ filters, U2-Net background removal, and ResNet auto-tagging behind one shared core. <a href="https://github.com/jlee31/" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        </div>
+        <div class="proj-item">
+            <p class="proj-head"><strong>Self-Driving Race Car</strong> <span class="proj-stack">Python, PyTorch, Gymnasium</span></p>
+            <p>DQN agent that learns to drive from raw pixels in CarRacing-v3; a PyTorch rewrite of an older TF1 implementation. <a href="https://github.com/jlee31/AI-self-driving-race-car-Deep-Reinforcement-Learning" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        </div>
+        <div class="proj-item">
+            <p class="proj-head"><strong>Neural Ronin</strong> <span class="proj-stack">Python, Pygame, Gymnasium, Stable-Baselines3</span> <span class="proj-status">in progress</span></p>
+            <p>2D samurai platformer built as an RL environment, with a PPO agent trained to fight through levels. <a href="https://github.com/jlee31/neural-ronin" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        </div>
+        <div class="proj-item">
+            <p class="proj-head"><strong>ML Notes</strong> <span class="proj-stack">Markdown, Python</span></p>
+            <p>Study notes and notebook experiments from hands-on ML resources. <a href="https://github.com/jlee31/ml-ai-sandbox" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        </div>
+
+        <h2 class="proj-group">Software & apps</h2>
+        <div class="proj-item">
+            <p class="proj-head"><strong>Study Room</strong> <span class="proj-stack">Python, FastAPI, WebSockets, SQLite</span> <span class="proj-status">in progress</span></p>
+            <p>Real-time co-working app with a synced Pomodoro timer, live presence, and a sticky-note corkboard. No accounts needed. <a href="https://github.com/jlee31/studyroom" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        </div>
+        <div class="proj-item">
+            <p class="proj-head"><strong>Chess Engine</strong> <span class="proj-stack">C++</span></p>
+            <p>Object-oriented chess engine (CS246 final project) with full rule enforcement and a minimax AI with alpha-beta pruning. <a href="https://github.com/jlee31/cs246_a5" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        </div>
+        <div class="proj-item">
+            <p class="proj-head"><strong>H[AI]r</strong> <span class="proj-stack">Swift, SwiftUI</span> <span class="proj-status">in progress · private</span></p>
+            <p>Native iPhone app with a focus on a clean, responsive experience. </p>
+        </div>
+        <div class="proj-item">
+            <p class="proj-head"><strong>ECCC Scripts</strong> <span class="proj-stack">Python</span></p>
+            <p>Generic versions of productivity scripts I wrote during my co-op at Environment and Climate Change Canada. <a href="https://github.com/jlee31/eccc-scripts" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        </div>
+
+        <h2 class="proj-group">Games</h2>
+        <div class="proj-item">
+            <p class="proj-head"><strong>Magestic Brawl</strong> <span class="proj-stack">Python, Pygame-CE, Gymnasium</span> <span class="proj-status">in progress</span></p>
+            <p>2D street-fighter-style game with magical characters; adding new features and reinforcement learning. <a href="https://github.com/jlee31/magestic-brawl" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        </div>
+
+        <h2 class="proj-group">Notes & earlier work</h2>
+        <div class="proj-item">
+            <p class="proj-head"><strong>Notes</strong> <span class="proj-stack">Markdown</span></p>
+            <p>Public collection of notes on coursework, papers, and tools. <a href="https://github.com/jlee31/notes" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        </div>
+        <div class="proj-item">
+            <p class="proj-head"><strong>IB Chemistry IA</strong> <span class="proj-stack">PDF</span></p>
+            <p>Experimental study of reaction rates and activation energy for hydrogen peroxide with manganese dioxide. <a href="Documents/chemia.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+        </div>
+        <div class="proj-item">
+            <p class="proj-head"><strong>IB Mathematics IA</strong> <span class="proj-stack">PDF</span></p>
+            <p>Lotka–Volterra predator–prey models with numerical exploration in Python. <a href="Documents/mathia.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+        </div>
+
     </main>
-
-    <script src="js/site.js"></script>
-    <script src="js/projects-data.js"></script>
-    <script src="js/projects-page.js"></script>
 </body>
 </html>

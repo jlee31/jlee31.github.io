@@ -1,13 +1,13 @@
 html {
-    background-color: #faf8f5;
-    font-size: 18px;
+    background-color: #ffffff;
+    font-size: 17px;
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: Georgia, "Times New Roman", serif;
-    line-height: 1.55;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
     color: #1a1a1a;
 }
 
@@ -37,7 +37,7 @@ a:hover {
     height: 110px;
     border-radius: 50%;
     object-fit: cover;
-    background: #e5ded2;
+    background: #eee;
     border: 1px solid #ccc;
     flex-shrink: 0;
 }
@@ -152,4 +152,53 @@ section ul {
 
 section ul li {
     margin-bottom: 0.6rem;
+}
+
+.site-nav {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 0.95rem;
+    display: flex;
+    gap: 1.25rem;
+    margin: 0 0 2rem;
+}
+
+.site-nav a {
+    text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+    text-decoration: underline;
+}
+
+.page-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #235757;
+    margin: 0 0 0.4rem;
+}
+
+.lede {
+    color: #444;
+    margin: 0 0 1.5rem;
+}
+
+.more {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 0.95rem;
+}
+
+.proj-group {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #666;
+    margin: 2.25rem 0 0.9rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.proj-group:first-of-type {
+    margin-top: 0;
 }
