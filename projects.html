@@ -4,78 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Joseph Lee · Projects</title>
+    <title>Projects · Joseph Lee</title>
 </head>
 <body>
-    <main>
-        <nav class="site-nav" aria-label="Primary">
-            <a href="index.html">Home</a>
-            <a href="projects.html" aria-current="page">Projects</a>
-            <a href="papers.html">Papers</a>
+    <header class="site-header">
+        <a class="home" href="index.html">jlee31.github.io</a>
+        <nav class="social" aria-label="Links">
+            <a href="https://github.com/jlee31" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.69-3.87-1.36-3.87-1.36-.52-1.32-1.28-1.67-1.28-1.67-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.47.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.21-1.49 3.18-1.18 3.18-1.18.63 1.58.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.4-5.27 5.68.41.35.78 1.05.78 2.12 0 1.53-.01 2.76-.01 3.14 0 .3.2.66.79.55C20.21 21.38 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/josephjl31" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 2H3.55C2.7 2 2 2.68 2 3.52v16.96C2 21.32 2.7 22 3.55 22h16.9c.85 0 1.55-.68 1.55-1.52V3.52C22 2.68 21.3 2 20.45 2zM8.34 19H5.37V9.46h2.97V19zM6.86 8.15a1.72 1.72 0 1 1 0-3.44 1.72 1.72 0 0 1 0 3.44zM19 19h-2.96v-4.64c0-1.1-.02-2.53-1.54-2.53-1.54 0-1.78 1.2-1.78 2.45V19H9.76V9.46h2.84v1.3h.04c.4-.75 1.36-1.54 2.8-1.54 3 0 3.56 1.98 3.56 4.55V19z"/></svg>
+            </a>
+            <a href="mailto:hijosephl31@gmail.com" aria-label="Email" title="Email">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1 2.4V18h16V7.4l-8 5.2-8-5.2zM4.6 7l7.4 4.8L19.4 7H4.6z"/></svg>
+            </a>
+            <a href="Documents/joseph_lee_resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Resume" title="Resume">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM6 4h5v5a1 1 0 0 0 1 1h5v10H6V4zm2 8h8v1H8v-1zm0 2.5h8v1H8v-1zm0 2.5h5v1H8v-1z"/></svg>
+            </a>
         </nav>
-        <h1 class="page-title">Projects</h1>
-        <p class="lede">Things I've built, grouped by what they are.</p>
+    </header>
 
-        <h2 class="proj-group">Machine learning & AI</h2>
-        <div class="proj-item">
-            <p class="proj-head"><strong>Quote Finder</strong> <span class="proj-stack">Python, LangChain, FastAPI, Claude API, React</span></p>
-            <p>Full-stack RAG app that retrieves relevant quotes from natural-language prompts using vector embeddings over 25,000+ quotes. <a href="https://github.com/jlee31/" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-        </div>
-        <div class="proj-item">
-            <p class="proj-head"><strong>Image Lab</strong> <span class="proj-stack">Python, FastAPI, PyTorch, OpenCV, Docker</span></p>
-            <p>Image processing platform with 13+ filters, U2-Net background removal, and ResNet auto-tagging behind one shared core. <a href="https://github.com/jlee31/" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-        </div>
-        <div class="proj-item">
-            <p class="proj-head"><strong>Self-Driving Race Car</strong> <span class="proj-stack">Python, PyTorch, Gymnasium</span></p>
-            <p>DQN agent that learns to drive from raw pixels in CarRacing-v3; a PyTorch rewrite of an older TF1 implementation. <a href="https://github.com/jlee31/AI-self-driving-race-car-Deep-Reinforcement-Learning" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-        </div>
-        <div class="proj-item">
-            <p class="proj-head"><strong>Neural Ronin</strong> <span class="proj-stack">Python, Pygame, Gymnasium, Stable-Baselines3</span> <span class="proj-status">in progress</span></p>
-            <p>2D samurai platformer built as an RL environment, with a PPO agent trained to fight through levels. <a href="https://github.com/jlee31/neural-ronin" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-        </div>
-        <div class="proj-item">
-            <p class="proj-head"><strong>ML Notes</strong> <span class="proj-stack">Markdown, Python</span></p>
-            <p>Study notes and notebook experiments from hands-on ML resources. <a href="https://github.com/jlee31/ml-ai-sandbox" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-        </div>
+    <main>
+        <h1>Projects</h1>
+        <p>Things I've built, grouped by what they are.</p>
 
-        <h2 class="proj-group">Software & apps</h2>
-        <div class="proj-item">
-            <p class="proj-head"><strong>Study Room</strong> <span class="proj-stack">Python, FastAPI, WebSockets, SQLite</span> <span class="proj-status">in progress</span></p>
-            <p>Real-time co-working app with a synced Pomodoro timer, live presence, and a sticky-note corkboard. No accounts needed. <a href="https://github.com/jlee31/studyroom" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        <h2>Machine learning and AI</h2>
+        <div class="item">
+            <p><a href="https://github.com/jlee31/" target="_blank" rel="noopener noreferrer">Quote Finder</a> <span class="meta">Python, LangChain, FastAPI, Claude API, React</span></p>
+            <p>Full-stack RAG app that retrieves relevant quotes from natural-language prompts using vector embeddings over 25,000+ quotes.</p>
         </div>
-        <div class="proj-item">
-            <p class="proj-head"><strong>Chess Engine</strong> <span class="proj-stack">C++</span></p>
-            <p>Object-oriented chess engine (CS246 final project) with full rule enforcement and a minimax AI with alpha-beta pruning. <a href="https://github.com/jlee31/cs246_a5" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        <div class="item">
+            <p><a href="https://github.com/jlee31/" target="_blank" rel="noopener noreferrer">Image Lab</a> <span class="meta">Python, FastAPI, PyTorch, OpenCV, Docker</span></p>
+            <p>Image processing platform with 13+ filters, U2-Net background removal, and ResNet auto-tagging behind one shared core.</p>
         </div>
-        <div class="proj-item">
-            <p class="proj-head"><strong>H[AI]r</strong> <span class="proj-stack">Swift, SwiftUI</span> <span class="proj-status">in progress · private</span></p>
-            <p>Native iPhone app with a focus on a clean, responsive experience. </p>
+        <div class="item">
+            <p><a href="https://github.com/jlee31/AI-self-driving-race-car-Deep-Reinforcement-Learning" target="_blank" rel="noopener noreferrer">Self-Driving Race Car</a> <span class="meta">Python, PyTorch, Gymnasium</span></p>
+            <p>DQN agent that learns to drive from raw pixels in CarRacing-v3; a PyTorch rewrite of an older TF1 implementation.</p>
         </div>
-        <div class="proj-item">
-            <p class="proj-head"><strong>ECCC Scripts</strong> <span class="proj-stack">Python</span></p>
-            <p>Generic versions of productivity scripts I wrote during my co-op at Environment and Climate Change Canada. <a href="https://github.com/jlee31/eccc-scripts" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        <div class="item">
+            <p><a href="https://github.com/jlee31/neural-ronin" target="_blank" rel="noopener noreferrer">Neural Ronin</a> <span class="meta">Python, Pygame, Gymnasium, Stable-Baselines3</span> <span class="status">in progress</span></p>
+            <p>2D samurai platformer built as an RL environment, with a PPO agent trained to fight through levels.</p>
+        </div>
+        <div class="item">
+            <p><a href="https://github.com/jlee31/ml-ai-sandbox" target="_blank" rel="noopener noreferrer">ML Notes</a> <span class="meta">Markdown, Python</span></p>
+            <p>Study notes and notebook experiments from hands-on ML resources.</p>
         </div>
 
-        <h2 class="proj-group">Games</h2>
-        <div class="proj-item">
-            <p class="proj-head"><strong>Magestic Brawl</strong> <span class="proj-stack">Python, Pygame-CE, Gymnasium</span> <span class="proj-status">in progress</span></p>
-            <p>2D street-fighter-style game with magical characters; adding new features and reinforcement learning. <a href="https://github.com/jlee31/magestic-brawl" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        <h2>Software and apps</h2>
+        <div class="item">
+            <p><a href="https://github.com/jlee31/studyroom" target="_blank" rel="noopener noreferrer">Study Room</a> <span class="meta">Python, FastAPI, WebSockets, SQLite</span> <span class="status">in progress</span></p>
+            <p>Real-time co-working app with a synced Pomodoro timer, live presence, and a sticky-note corkboard. No accounts needed.</p>
+        </div>
+        <div class="item">
+            <p><a href="https://github.com/jlee31/cs246_a5" target="_blank" rel="noopener noreferrer">Chess Engine</a> <span class="meta">C++</span></p>
+            <p>Object-oriented chess engine (CS246 final project) with full rule enforcement and a minimax AI with alpha-beta pruning.</p>
+        </div>
+        <div class="item">
+            <p>H[AI]r <span class="meta">Swift, SwiftUI</span> <span class="status">in progress · private</span></p>
+            <p>Native iPhone app with a focus on a clean, responsive experience.</p>
+        </div>
+        <div class="item">
+            <p><a href="https://github.com/jlee31/eccc-scripts" target="_blank" rel="noopener noreferrer">ECCC Scripts</a> <span class="meta">Python</span></p>
+            <p>Generic versions of productivity scripts I wrote during my co-op at Environment and Climate Change Canada.</p>
         </div>
 
-        <h2 class="proj-group">Notes & earlier work</h2>
-        <div class="proj-item">
-            <p class="proj-head"><strong>Notes</strong> <span class="proj-stack">Markdown</span></p>
-            <p>Public collection of notes on coursework, papers, and tools. <a href="https://github.com/jlee31/notes" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-        </div>
-        <div class="proj-item">
-            <p class="proj-head"><strong>IB Chemistry IA</strong> <span class="proj-stack">PDF</span></p>
-            <p>Experimental study of reaction rates and activation energy for hydrogen peroxide with manganese dioxide. <a href="Documents/chemia.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
-        </div>
-        <div class="proj-item">
-            <p class="proj-head"><strong>IB Mathematics IA</strong> <span class="proj-stack">PDF</span></p>
-            <p>Lotka–Volterra predator–prey models with numerical exploration in Python. <a href="Documents/mathia.pdf" target="_blank" rel="noopener noreferrer">PDF</a></p>
+        <h2>Games</h2>
+        <div class="item">
+            <p><a href="https://github.com/jlee31/magestic-brawl" target="_blank" rel="noopener noreferrer">Magestic Brawl</a> <span class="meta">Python, Pygame-CE, Gymnasium</span> <span class="status">in progress</span></p>
+            <p>2D street-fighter-style game with magical characters; adding new features and reinforcement learning.</p>
         </div>
 
+        <h2>Notes and earlier work</h2>
+        <div class="item">
+            <p><a href="https://github.com/jlee31/notes" target="_blank" rel="noopener noreferrer">Notes</a> <span class="meta">Markdown</span></p>
+            <p>Public collection of notes on coursework, papers, and tools.</p>
+        </div>
+        <div class="item">
+            <p><a href="Documents/chemia.pdf" target="_blank" rel="noopener noreferrer">IB Chemistry IA</a> <span class="meta">PDF</span></p>
+            <p>Experimental study of reaction rates and activation energy for hydrogen peroxide with manganese dioxide.</p>
+        </div>
+        <div class="item">
+            <p><a href="Documents/mathia.pdf" target="_blank" rel="noopener noreferrer">IB Mathematics IA</a> <span class="meta">PDF</span></p>
+            <p>Lotka–Volterra predator–prey models with numerical exploration in Python.</p>
+        </div>
     </main>
 </body>
 </html>
